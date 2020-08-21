@@ -28,7 +28,7 @@ const Card = ({
             width
           }}
           className={flipped ? "front" : "back"}
-          src={flipped || solved ? `/img/${type}.png` : "/img/back.png"}
+          src={flipped ? `/images/${type}.png` : "/images/react-backside.png"}
           alt={type}
         />
       </div>
