@@ -2,16 +2,15 @@ import React from "react";
 
 import "./style.css";
 
-const Card = ({
+function Card ({
   handleClick,
   id,
   type,
   flipped,
-  solved,
   height,
   width,
   disabled
-}) => {
+}) {
   return (
     <div
       className={`flip-container ${flipped ? "flipped" : ""}`}
@@ -34,4 +33,6 @@ const Card = ({
       </div>
     </div>
   );
-};
+}
+
+export default Card;

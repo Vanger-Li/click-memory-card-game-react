@@ -12,13 +12,12 @@ export default function App() {
       <h1>Click Memory Game</h1>
       <h2>Can you remember where the cards are?</h2>
       <Card
-        id={1}
-        height={100}
-        width={100}
-        back={"/images/react-backside.png"}
-        front={`/images/${type}.png`}
-        flipped={flipped.includes(1)}
-        handleClick={() => handleClick(1)}
+        id = {1}
+        height = {100}
+        width = {100}
+        back = {"/images/react-backside.png"}
+        flipped = {flipped.includes(1)}
+        handleClick = {() => handleClick(1)}
       />
     </div>
   );
